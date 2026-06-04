@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Youtube.com Clone</title>
+        <style>
+            .thumbnail {
+                width: 300px;/* when we give width to the image, height will automatically adjust to maintain the aspect ratio of the image. So, we can set height to auto to ensure that the image scales proportionally.  */
+                /* height: 300px;
+                object-fit: contain; This property ensures that the image covers the entire area of the thumbnail while maintaining its aspect ratio. If the image is larger than the thumbnail, it will be cropped to fit. 
+                object-position: top;  This property specifies the position of the image within the thumbnail. In this case, it is set to "right," which means that the right side of the image will be aligned with the right edge of the thumbnail. 
+                border-width: 2px;
+                border-style: solid; */
+                display: block;
+            }
+
+            .search-bar {
+                display: block;
+            }
+            .video-title {
+                margin-top: 0;
+            }
+
+            .video-preview {
+                width: 300px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 15px;
+            }
+            .channel-picture {
+                display: inline-block;
+                width: 50px;
+                vertical-align: top;
+            }
+            .video-info {
+                display: inline-block;
+                width: 200px;
+            }
+            .profile-pic {
+                width: 40px;
+                border-radius: 50px;
+                
+            }
+            .thumbnail-row {
+                margin-bottom: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <input class="search-bar" type="text" placeholder="Search">
+
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/thumbnail-1 (1).webp">
+            </div>
+            <div>
+                <div class="channel-picture">
+                    <img class="profile-pic" src="channesl-pictures/channel-1.jpeg">
+                </div>
+                <div class="video-info">
+        <p class="video-title">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+        </p>
+
+        <p class="video-author">
+            Marquees Brownlee
+        </p>
+
+        <p class="video-status">
+            3.4M views &#183; 2 days ago
+                </div>
+        
+            </div>
+        </div>
+
+
+        <div class="video-preview">
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+
+        <p>  
+            Try Not To Laugh Challenge #9
+        </p>
+
+        <p class="video-author">
+            Markiplier
+        </p>
+
+        <p class="video-status">
+           19M views &#183; 4 years ago
+        </p>
+        </div>
+    </body>
+</html>
+
